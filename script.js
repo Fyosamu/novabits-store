@@ -64,10 +64,14 @@ $$("#navLinks a").forEach((a) =>
 /* =========================================================
    Footer / contact bits
    ========================================================= */
-$("#year").textContent = new Date().getFullYear();
+const yearEl = $("#year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
 const contactLink = $("#contactEmail");
-contactLink.href = `mailto:${CONFIG.supportEmail}`;
-contactLink.textContent = CONFIG.supportEmail;
+if (contactLink) {
+  contactLink.href = `mailto:${CONFIG.supportEmail}`;
+  contactLink.textContent = CONFIG.supportEmail;
+}
 
 /* =========================================================
    Buy modal
@@ -139,7 +143,7 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
 });
 
-$("#copyBtn").addEventListener("click", async () => {
+$("#copyBtn")?.addEventListener("click", async () => {
   const ok = await copyText(payAddressEl.value);
   toast(ok ? "✓ آدرس کپی شد" : "کپی انجام نشد — دستی کپی کنید");
 });
@@ -147,7 +151,7 @@ $("#copyBtn").addEventListener("click", async () => {
 /* =========================================================
    Order form → mailto with everything pre-filled
    ========================================================= */
-$("#orderForm").addEventListener("submit", (e) => {
+$("#orderForm")?.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const email = $("#buyerEmail").value.trim();

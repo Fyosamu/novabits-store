@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About us — NovaBits</title>
+  <meta name="description" content="NovaBits builds fast, conversion-focused WordPress themes for shops, login pages, blogs and landing pages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="index.html" class="logo"><span class="logo__mark"></span> Nova<span class="accent">Bits</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html#themes">Themes</a>
+        <a href="index.html#included">What's included</a>
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="index.html#themes" class="btn btn--sm btn--primary nav__cta">Browse themes</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">About us</span>
+      <h1>We build themes that <span class="grad">earn their keep</span></h1>
+      <p class="lead">Small studio, obsessive about load times, conversions and clean code.</p>
+    </div>
+  </section>
+
+  <section class="prose">
+    <div class="container container--narrow">
+      <p>
+        NovaBits is an independent WordPress theme studio. We design and develop premium themes for
+        store owners, bloggers, agencies and SaaS founders who need a site that looks sharp
+        <strong>and</strong> loads fast.
+      </p>
+
+      <h2>What we believe</h2>
+      <ul>
+        <li><strong>Performance is a feature.</strong> Every theme is tested against Core Web Vitals before release.</li>
+        <li><strong>No bloat.</strong> You get the files you need — no page-builder lock-in, no bundled junk.</li>
+        <li><strong>Honest pricing.</strong> One payment, lifetime updates, no surprise renewals.</li>
+        <li><strong>Real support.</strong> Written by the people who built the theme, answered within 24 hours.</li>
+      </ul>
+
+      <h2>How a theme is made</h2>
+      <p>
+        Each product starts from a real use case — a shop checkout that converts, a login screen that
+        feels trustworthy, a blog layout that keeps readers scrolling. We prototype, test on real
+        content, measure speed, and only publish what we would run on our own sites.
+      </p>
+
+      <h2>Licensing</h2>
+      <p>
+        All products are released under the <strong>GPL (GNU General Public License)</strong> — the same
+        license that powers WordPress itself. You can install a theme on unlimited sites that you own.
+        Redistribution or resale of the original files is not permitted.
+      </p>
+
+      <h2>Payments</h2>
+      <p>
+        We accept <strong>USDT on the Ethereum network (ERC-20)</strong> so that anyone, anywhere, can
+        purchase without a credit card. Every order is verified manually before the download link is sent.
+      </p>
+
+      <p><a class="btn btn--primary" href="index.html#themes">Browse the collection</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo__mark"></span> Nova<span class="accent">Bits</span></a>
+          <p>Premium WordPress themes for shops, login pages and landing pages — built for speed and conversions.</p>
+        </div>
+        <div>
+          <h4>Store</h4>
+          <ul>
+            <li><a href="index.html#themes">All themes</a></li>
+            <li><a href="index.html#how">How it works</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of use</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Get in touch</a></li>
+            <li>Replies within 24h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> NovaBits. All rights reserved.</span>
+        <span>Payments in USDT (ERC-20) · GPL licensed products</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

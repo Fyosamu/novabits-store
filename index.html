@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NovaBits — Premium Digital Products</title>
-  <meta name="description" content="High-quality digital products for creators, designers and developers. Instant delivery, secure crypto payments." />
+  <title>NovaBits — Premium WordPress Themes</title>
+  <meta name="description" content="High-converting WordPress themes for shops, login pages, blogs and landing pages. Lifetime updates, instant delivery, secure crypto payment." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -12,161 +12,220 @@
 </head>
 <body>
 
-  <!-- ============ NAVBAR ============ -->
+  <!-- ===== NAV ===== -->
   <header class="nav" id="top">
     <div class="container nav__inner">
-      <a href="#top" class="logo">
-        <span class="logo__mark">◆</span> Nova<span class="accent">Bits</span>
-      </a>
-
+      <a href="index.html" class="logo"><span class="logo__mark"></span> Nova<span class="accent">Bits</span></a>
       <nav class="nav__links" id="navLinks">
-        <a href="#products">Products</a>
+        <a href="#themes">Themes</a>
+        <a href="#included">What's included</a>
         <a href="#how">How it works</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
-
-      <a href="#products" class="btn btn--sm nav__cta">Browse products</a>
-
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="#themes" class="btn btn--sm btn--primary nav__cta">Browse themes</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <!-- ============ HERO ============ -->
+  <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__text">
-        <span class="pill">🚀 Trusted by 4,000+ creators worldwide</span>
-        <h1>Premium digital products, <span class="grad">delivered instantly</span></h1>
+        <span class="pill">✦ <b>GPL Licensed</b> · Instant download · Lifetime updates</span>
+        <h1>WordPress themes <span class="grad">built to convert</span></h1>
         <p class="lead">
-          Templates, icon packs, e-books and design assets — crafted with care.
-          Pay securely with crypto and get your files in minutes.
+          Pixel-perfect themes for shops, login pages, blogs and landing pages —
+          fast, responsive and ready to import in one click.
         </p>
         <div class="hero__actions">
-          <a href="#products" class="btn btn--primary">Explore the store</a>
-          <a href="#how" class="btn btn--ghost">How it works →</a>
+          <a href="#themes" class="btn btn--primary">Explore themes</a>
+          <a href="#how" class="btn btn--ghost">How delivery works →</a>
         </div>
-        <ul class="hero__stats">
-          <li><strong>4,000+</strong><span>Happy customers</span></li>
-          <li><strong>25+</strong><span>Quality products</span></li>
-          <li><strong>24/7</strong><span>Instant delivery</span></li>
+        <ul class="hero__proof">
+          <li><strong>1-click</strong><span>Demo import</span></li>
+          <li><strong>0.9s</strong><span>Avg. load time</span></li>
+          <li><strong>6 mo</strong><span>Free support</span></li>
         </ul>
       </div>
 
       <div class="hero__art" aria-hidden="true">
-        <div class="card-float card-float--1">
-          <div class="card-float__icon">🎨</div>
-          <div>
-            <strong>UI Kit Pro</strong>
-            <span>320+ components</span>
+        <div class="mock">
+          <div class="mock__bar">
+            <i></i><i></i><i></i>
+            <span class="mock__url">your-store.com</span>
           </div>
-          <em>$29</em>
-        </div>
-        <div class="card-float card-float--2">
-          <div class="card-float__icon">📘</div>
-          <div>
-            <strong>Freelance Blueprint</strong>
-            <span>180-page e-book</span>
-          </div>
-          <em>$12</em>
-        </div>
-        <div class="card-float card-float--3">
-          <div class="card-float__icon">⚡</div>
-          <div>
-            <strong>Instant delivery</strong>
-            <span>within minutes</span>
+          <div class="mock__body">
+            <div class="shop-preview__top">
+              <span class="shop-preview__logo"></span>
+              <span class="shop-preview__menu"><i></i><i></i><i></i></span>
+            </div>
+            <div class="shop-preview__hero"></div>
+            <div class="shop-preview__grid">
+              <div class="shop-preview__item"><i></i><b></b><em></em></div>
+              <div class="shop-preview__item"><i></i><b></b><em></em></div>
+              <div class="shop-preview__item"><i></i><b></b><em></em></div>
+              <div class="shop-preview__item"><i></i><b></b><em></em></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ PRODUCTS ============ -->
-  <section class="section" id="products">
+  <!-- ===== THEMES ===== -->
+  <section class="section" id="themes">
     <div class="container">
       <div class="section__head">
-        <span class="eyebrow">The store</span>
-        <h2>Featured products</h2>
-        <p>Hand-picked digital assets ready for your next project.</p>
+        <span class="eyebrow">The collection</span>
+        <h2>Premium themes, ready to sell with</h2>
+        <p>Every theme ships with demo content, child theme and documentation.</p>
       </div>
 
-      <div class="grid" id="productGrid">
+      <div class="grid">
 
-        <article class="product" data-id="ui-kit" data-name="Ultimate UI Kit Pro" data-price="29">
-          <div class="product__thumb thumb--violet">🧩</div>
+        <!-- 1 · Shop -->
+        <article class="product" data-id="shoply" data-name="Shoply — WooCommerce Theme" data-price="49">
+          <div class="pv pv--shop">
+            <div class="pv__frame">
+              <div class="pv__dots"><i></i><i></i><i></i></div>
+              <div class="pv__stage">
+                <span class="pv__tile"></span><span class="pv__tile"></span><span class="pv__tile"></span>
+                <span class="pv__tile"></span><span class="pv__tile"></span><span class="pv__tile"></span>
+              </div>
+            </div>
+          </div>
           <div class="product__body">
-            <div class="product__tags"><span>Design</span><span>Figma</span></div>
-            <h3>Ultimate UI Kit Pro</h3>
-            <p>320+ responsive components, 60 screens and a full design system.</p>
+            <div class="product__tags"><span>WooCommerce</span><span>Shop</span></div>
+            <h3>Shoply — WooCommerce Theme</h3>
+            <p>Conversion-focused shop: AJAX cart, quick view, mega menu and 6 checkout layouts.</p>
+            <div class="product__meta"><span>Demo import <b>1-click</b></span><span>Speed <b>96/100</b></span></div>
             <div class="product__foot">
-              <strong class="price">$29</strong>
+              <strong class="price">$49<s>$79 regular</s></strong>
               <button class="btn btn--primary btn--sm buy-btn">Buy now</button>
             </div>
           </div>
         </article>
 
-        <article class="product" data-id="icons" data-name="500+ Icon Pack" data-price="19">
-          <div class="product__thumb thumb--mint">✨</div>
+        <!-- 2 · Login -->
+        <article class="product" data-id="authly" data-name="Authly — Login & Signup Kit" data-price="29">
+          <div class="pv pv--login">
+            <div class="pv__frame">
+              <div class="pv__dots"><i></i><i></i><i></i></div>
+              <div class="pv__stage">
+                <div class="pv__card">
+                  <div class="pv__logo"></div>
+                  <div class="pv__field"></div>
+                  <div class="pv__field w60"></div>
+                  <div class="pv__go"></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="product__body">
-            <div class="product__tags"><span>Icons</span><span>SVG</span></div>
-            <h3>500+ Icon Pack</h3>
-            <p>Crisp, scalable SVG icons in 4 styles — outline, solid, duotone and more.</p>
+            <div class="product__tags"><span>Login</span><span>Auth</span></div>
+            <h3>Authly — Login &amp; Signup Kit</h3>
+            <p>12 custom login, registration and password-reset screens with social buttons.</p>
+            <div class="product__meta"><span>Screens <b>12</b></span><span>Plugin <b>optional</b></span></div>
             <div class="product__foot">
-              <strong class="price">$19</strong>
+              <strong class="price">$29<s>$45 regular</s></strong>
               <button class="btn btn--primary btn--sm buy-btn">Buy now</button>
             </div>
           </div>
         </article>
 
-        <article class="product" data-id="resume" data-name="Resume & CV Bundle" data-price="14">
-          <div class="product__thumb thumb--amber">📄</div>
+        <!-- 3 · Blog -->
+        <article class="product" data-id="inkwell" data-name="Inkwell — Blog & Magazine" data-price="39">
+          <div class="pv pv--blog">
+            <div class="pv__frame">
+              <div class="pv__dots"><i></i><i></i><i></i></div>
+              <div class="pv__stage">
+                <div class="pv__cover"></div>
+                <div class="pv__line w70"></div>
+                <div class="pv__line"></div>
+                <div class="pv__line w45"></div>
+                <div class="pv__cols"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+          </div>
           <div class="product__body">
-            <div class="product__tags"><span>Template</span><span>Word</span></div>
-            <h3>Resume &amp; CV Bundle</h3>
-            <p>12 ATS-friendly resume templates with matching cover letters.</p>
+            <div class="product__tags"><span>Blog</span><span>Magazine</span></div>
+            <h3>Inkwell — Blog &amp; Magazine</h3>
+            <p>Editorial layouts with reading progress, dark mode and 4 ad-ready placements.</p>
+            <div class="product__meta"><span>Layouts <b>8</b></span><span>Typography <b>40 fonts</b></span></div>
             <div class="product__foot">
-              <strong class="price">$14</strong>
+              <strong class="price">$39<s>$59 regular</s></strong>
               <button class="btn btn--primary btn--sm buy-btn">Buy now</button>
             </div>
           </div>
         </article>
 
-        <article class="product" data-id="social" data-name="Social Media Templates" data-price="24">
-          <div class="product__thumb thumb--pink">📱</div>
+        <!-- 4 · Portfolio -->
+        <article class="product" data-id="folio" data-name="Folio — Portfolio & Agency" data-price="35">
+          <div class="pv pv--port">
+            <div class="pv__frame">
+              <div class="pv__dots"><i></i><i></i><i></i></div>
+              <div class="pv__stage">
+                <span class="pv__m"></span><span class="pv__m"></span><span class="pv__m"></span><span class="pv__m"></span>
+              </div>
+            </div>
+          </div>
           <div class="product__body">
-            <div class="product__tags"><span>Canva</span><span>Social</span></div>
-            <h3>Social Media Templates</h3>
-            <p>150 editable posts &amp; stories for Instagram, TikTok and LinkedIn.</p>
+            <div class="product__tags"><span>Portfolio</span><span>Agency</span></div>
+            <h3>Folio — Portfolio &amp; Agency</h3>
+            <p>Masonry case studies, animated filters and a contact flow that gets replies.</p>
+            <div class="product__meta"><span>Demos <b>9</b></span><span>Animations <b>GSAP</b></span></div>
             <div class="product__foot">
-              <strong class="price">$24</strong>
+              <strong class="price">$35<s>$55 regular</s></strong>
               <button class="btn btn--primary btn--sm buy-btn">Buy now</button>
             </div>
           </div>
         </article>
 
-        <article class="product" data-id="ebook" data-name="The Freelancing Blueprint" data-price="12">
-          <div class="product__thumb thumb--blue">📘</div>
+        <!-- 5 · Landing -->
+        <article class="product" data-id="launchly" data-name="Launchly — Landing & SaaS" data-price="32">
+          <div class="pv pv--land">
+            <div class="pv__frame">
+              <div class="pv__dots"><i></i><i></i><i></i></div>
+              <div class="pv__stage">
+                <div class="pv__hero"></div>
+                <div class="pv__feats"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+          </div>
           <div class="product__body">
-            <div class="product__tags"><span>E-book</span><span>PDF</span></div>
-            <h3>The Freelancing Blueprint</h3>
-            <p>180 pages: finding clients, pricing your work and scaling to full-time.</p>
+            <div class="product__tags"><span>Landing</span><span>SaaS</span></div>
+            <h3>Launchly — Landing &amp; SaaS</h3>
+            <p>High-converting landing pages with pricing tables, testimonials and A/B-ready sections.</p>
+            <div class="product__meta"><span>Sections <b>40+</b></span><span>Forms <b>built-in</b></span></div>
             <div class="product__foot">
-              <strong class="price">$12</strong>
+              <strong class="price">$32<s>$49 regular</s></strong>
               <button class="btn btn--primary btn--sm buy-btn">Buy now</button>
             </div>
           </div>
         </article>
 
-        <article class="product" data-id="presets" data-name="Lightroom Preset Pack" data-price="9">
-          <div class="product__thumb thumb--teal">🌅</div>
+        <!-- 6 · Dashboard -->
+        <article class="product" data-id="panelly" data-name="Panelly — Admin Dashboard" data-price="45">
+          <div class="pv pv--dash">
+            <div class="pv__frame">
+              <div class="pv__dots"><i></i><i></i><i></i></div>
+              <div class="pv__stage">
+                <div class="pv__side"><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="pv__main">
+                  <span class="pv__stat"></span><span class="pv__stat"></span><span class="pv__stat"></span>
+                  <span class="pv__chart"></span>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="product__body">
-            <div class="product__tags"><span>Photo</span><span>LR</span></div>
-            <h3>Lightroom Preset Pack</h3>
-            <p>40 cinematic presets for desktop &amp; mobile, with a setup guide.</p>
+            <div class="product__tags"><span>Dashboard</span><span>Admin</span></div>
+            <h3>Panelly — Admin Dashboard</h3>
+            <p>Charts, tables and 5 skins for membership, e-learning and SaaS dashboards.</p>
+            <div class="product__meta"><span>Widgets <b>60+</b></span><span>Charts <b>12 types</b></span></div>
             <div class="product__foot">
-              <strong class="price">$9</strong>
+              <strong class="price">$45<s>$69 regular</s></strong>
               <button class="btn btn--primary btn--sm buy-btn">Buy now</button>
             </div>
           </div>
@@ -176,114 +235,169 @@
     </div>
   </section>
 
-  <!-- ============ HOW IT WORKS ============ -->
-  <section class="section section--alt" id="how">
+  <!-- ===== WHAT'S INCLUDED ===== -->
+  <section class="section section--alt" id="included">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Every purchase</span>
+        <h2>What's included</h2>
+        <p>No subscriptions, no hidden fees — one payment, everything included.</p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div class="feature__icon">⚡</div>
+          <h3>1-click demo import</h3>
+          <p>Full demo content, widgets and menus imported in under a minute.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">♾️</div>
+          <h3>Lifetime updates</h3>
+          <p>Free updates forever, including compatibility with new WordPress versions.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🛠️</div>
+          <h3>6 months of support</h3>
+          <p>Email support with replies within 24 hours, plus written documentation.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">📄</div>
+          <h3>GPL license</h3>
+          <p>Use on unlimited sites you own — no domain registration or activation keys.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section" id="how">
     <div class="container">
       <div class="section__head">
         <span class="eyebrow">Simple &amp; secure</span>
-        <h2>How it works</h2>
-        <p>Three easy steps between you and your download.</p>
+        <h2>How delivery works</h2>
+        <p>Three steps between you and your download link.</p>
       </div>
-
       <div class="steps">
         <div class="step">
           <span class="step__num">1</span>
-          <h3>Choose your product</h3>
-          <p>Pick any item and press <strong>Buy now</strong>. You'll see the exact price and our wallet address.</p>
+          <h3>Choose a theme</h3>
+          <p>Press <strong>Buy now</strong> — you'll get the exact price and our wallet address.</p>
         </div>
         <div class="step">
           <span class="step__num">2</span>
-          <h3>Pay with crypto</h3>
-          <p>Send the amount in <strong>USDT</strong> on the <strong>Ethereum network (ERC-20)</strong> from any wallet, including Trust&nbsp;Wallet.</p>
+          <h3>Pay with USDT</h3>
+          <p>Send the amount on the <strong>Ethereum network (ERC-20)</strong> from any wallet, including Trust&nbsp;Wallet.</p>
         </div>
         <div class="step">
           <span class="step__num">3</span>
-          <h3>Get instant delivery</h3>
-          <p>Submit your transaction ID — your download link arrives by email, usually within minutes.</p>
+          <h3>Get your files</h3>
+          <p>Submit the transaction ID — the download link arrives by email, usually within minutes.</p>
         </div>
       </div>
 
       <div class="pay-note">
-        <div class="pay-note__icon">🔒</div>
         <div>
           <h4>Why pay with crypto?</h4>
-          <p>Borderless, fast and private. No bank fees, no chargebacks — works from any country in the world.</p>
+          <p>Borderless and fast — works from any country, no bank fees, no chargebacks.</p>
         </div>
-        <a href="#products" class="btn btn--primary">Start shopping</a>
+        <a href="#themes" class="btn btn--primary">Start shopping</a>
       </div>
     </div>
   </section>
 
-  <!-- ============ FAQ ============ -->
-  <section class="section" id="faq">
+  <!-- ===== FAQ ===== -->
+  <section class="section section--alt" id="faq">
     <div class="container container--narrow">
       <div class="section__head">
         <span class="eyebrow">Questions</span>
         <h2>Frequently asked</h2>
       </div>
-
       <details class="faq" open>
         <summary>How fast is delivery?</summary>
-        <p>Most orders are delivered within minutes after the transaction is confirmed on the network (up to ~10 minutes on busy chains).</p>
+        <p>Most orders are delivered within minutes after the transaction confirms on the network (up to ~10 minutes when Ethereum is busy).</p>
       </details>
       <details class="faq">
         <summary>Which payment networks do you accept?</summary>
-        <p>We accept <strong>USDT on Ethereum (ERC-20)</strong>. In your wallet, make sure the selected network is <strong>Ethereum (ERC-20)</strong> — sending on any other network may result in lost funds.</p>
+        <p>USDT on Ethereum (ERC-20). In your wallet, make sure the selected network is <strong>Ethereum (ERC-20)</strong> — sending on another network may lose your funds.</p>
       </details>
       <details class="faq">
-        <summary>Can I get a refund?</summary>
-        <p>Digital goods are non-refundable once delivered. If a file is broken or doesn't match the description, contact us and we'll fix or replace it.</p>
+        <summary>Can I use a theme on multiple sites?</summary>
+        <p>Yes. The GPL license lets you use each theme on unlimited sites that you own. Reselling or redistributing the files is not allowed.</p>
       </details>
       <details class="faq">
-        <summary>Do I need an account?</summary>
-        <p>No sign-up required. Just order, pay, and receive your download link by email.</p>
+        <summary>Do I need any plugins?</summary>
+        <p>Only WooCommerce for shop themes, and it's free. Everything else works out of the box — no paid plugin required.</p>
       </details>
       <details class="faq">
-        <summary>Can I use the products commercially?</summary>
-        <p>Yes — every product includes a commercial license for unlimited personal and client projects.</p>
+        <summary>What if a theme doesn't work for me?</summary>
+        <p>Digital goods are non-refundable once delivered, but if a file is broken or doesn't match its description we'll fix or replace it free of charge.</p>
       </details>
     </div>
   </section>
 
-  <!-- ============ CTA / CONTACT ============ -->
+  <!-- ===== CTA ===== -->
   <section class="cta" id="contact">
-    <div class="container cta__inner">
-      <h2>Ready to level up your projects?</h2>
-      <p>Grab a product today — or drop us a question, we usually reply within a few hours.</p>
+    <div class="container">
+      <h2>Ship your next site faster</h2>
+      <p>Pick a theme today — or ask us anything before buying, we usually reply within a few hours.</p>
       <div class="cta__actions">
-        <a href="#products" class="btn btn--light">Browse products</a>
-        <a href="#" class="btn btn--outline-light" id="contactEmail">support@novabits.store</a>
+        <a href="#themes" class="btn btn--light">Browse themes</a>
+        <a href="contact.html" class="btn btn--outline-light">Contact support</a>
       </div>
     </div>
   </section>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="container footer__inner">
-      <a href="#top" class="logo"><span class="logo__mark">◆</span> Nova<span class="accent">Bits</span></a>
-      <nav class="footer__links">
-        <a href="#products">Products</a>
-        <a href="#how">How it works</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <p>© <span id="year"></span> NovaBits. All rights reserved.</p>
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo__mark"></span> Nova<span class="accent">Bits</span></a>
+          <p>Premium WordPress themes for shops, login pages and landing pages — built for speed and conversions.</p>
+        </div>
+        <div>
+          <h4>Store</h4>
+          <ul>
+            <li><a href="#themes">All themes</a></li>
+            <li><a href="#included">What's included</a></li>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of use</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">support@novabits.store</a></li>
+            <li>Replies within 24h</li>
+            <li>Documentation included</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> NovaBits. All rights reserved.</span>
+        <span>Payments in USDT (ERC-20) · GPL licensed products</span>
+      </div>
     </div>
   </footer>
 
-  <!-- ============ BUY MODAL ============ -->
+  <!-- ===== BUY MODAL ===== -->
   <div class="modal" id="buyModal" aria-hidden="true">
     <div class="modal__backdrop" data-close></div>
     <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <button class="modal__close" data-close aria-label="Close">×</button>
-
       <div class="modal__head">
-        <h3 id="modalTitle">Product</h3>
+        <h3 id="modalTitle">Theme</h3>
         <span class="price price--lg" id="modalPrice">$0</span>
       </div>
-
       <div class="modal__networks" id="networkTabs"></div>
-
       <label class="field">
         <span>Send exactly this amount to the address below</span>
         <div class="copyline">
@@ -291,9 +405,7 @@
           <button class="btn btn--primary btn--sm" id="copyBtn" type="button">Copy</button>
         </div>
       </label>
-
       <div class="net-note" id="netNote"></div>
-
       <form class="modal__form" id="orderForm">
         <label class="field">
           <span>Your email (for delivery)</span>
@@ -304,14 +416,12 @@
           <input type="text" id="txHash" placeholder="Paste the hash from your wallet" required />
         </label>
         <button class="btn btn--primary btn--block" type="submit">Confirm payment &amp; get download</button>
-        <p class="modal__hint">You'll be redirected to your email app with everything pre-filled — just press Send.</p>
+        <p class="modal__hint">Your email app opens with everything pre-filled — just press Send.</p>
       </form>
     </div>
   </div>
 
-  <!-- toast -->
   <div class="toast" id="toast"></div>
-
   <script src="script.js"></script>
 </body>
 </html>
