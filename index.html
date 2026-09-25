@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaBits — Premium Digital Products</title>
+  <meta name="description" content="High-quality digital products for creators, designers and developers. Instant delivery, secure crypto payments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="logo">
+        <span class="logo__mark">◆</span> Nova<span class="accent">Bits</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#products">Products</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#products" class="btn btn--sm nav__cta">Browse products</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="pill">🚀 Trusted by 4,000+ creators worldwide</span>
+        <h1>Premium digital products, <span class="grad">delivered instantly</span></h1>
+        <p class="lead">
+          Templates, icon packs, e-books and design assets — crafted with care.
+          Pay securely with crypto and get your files in minutes.
+        </p>
+        <div class="hero__actions">
+          <a href="#products" class="btn btn--primary">Explore the store</a>
+          <a href="#how" class="btn btn--ghost">How it works →</a>
+        </div>
+        <ul class="hero__stats">
+          <li><strong>4,000+</strong><span>Happy customers</span></li>
+          <li><strong>25+</strong><span>Quality products</span></li>
+          <li><strong>24/7</strong><span>Instant delivery</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <div class="card-float card-float--1">
+          <div class="card-float__icon">🎨</div>
+          <div>
+            <strong>UI Kit Pro</strong>
+            <span>320+ components</span>
+          </div>
+          <em>$29</em>
+        </div>
+        <div class="card-float card-float--2">
+          <div class="card-float__icon">📘</div>
+          <div>
+            <strong>Freelance Blueprint</strong>
+            <span>180-page e-book</span>
+          </div>
+          <em>$12</em>
+        </div>
+        <div class="card-float card-float--3">
+          <div class="card-float__icon">⚡</div>
+          <div>
+            <strong>Instant delivery</strong>
+            <span>within minutes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">The store</span>
+        <h2>Featured products</h2>
+        <p>Hand-picked digital assets ready for your next project.</p>
+      </div>
+
+      <div class="grid" id="productGrid">
+
+        <article class="product" data-id="ui-kit" data-name="Ultimate UI Kit Pro" data-price="29">
+          <div class="product__thumb thumb--violet">🧩</div>
+          <div class="product__body">
+            <div class="product__tags"><span>Design</span><span>Figma</span></div>
+            <h3>Ultimate UI Kit Pro</h3>
+            <p>320+ responsive components, 60 screens and a full design system.</p>
+            <div class="product__foot">
+              <strong class="price">$29</strong>
+              <button class="btn btn--primary btn--sm buy-btn">Buy now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-id="icons" data-name="500+ Icon Pack" data-price="19">
+          <div class="product__thumb thumb--mint">✨</div>
+          <div class="product__body">
+            <div class="product__tags"><span>Icons</span><span>SVG</span></div>
+            <h3>500+ Icon Pack</h3>
+            <p>Crisp, scalable SVG icons in 4 styles — outline, solid, duotone and more.</p>
+            <div class="product__foot">
+              <strong class="price">$19</strong>
+              <button class="btn btn--primary btn--sm buy-btn">Buy now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-id="resume" data-name="Resume & CV Bundle" data-price="14">
+          <div class="product__thumb thumb--amber">📄</div>
+          <div class="product__body">
+            <div class="product__tags"><span>Template</span><span>Word</span></div>
+            <h3>Resume &amp; CV Bundle</h3>
+            <p>12 ATS-friendly resume templates with matching cover letters.</p>
+            <div class="product__foot">
+              <strong class="price">$14</strong>
+              <button class="btn btn--primary btn--sm buy-btn">Buy now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-id="social" data-name="Social Media Templates" data-price="24">
+          <div class="product__thumb thumb--pink">📱</div>
+          <div class="product__body">
+            <div class="product__tags"><span>Canva</span><span>Social</span></div>
+            <h3>Social Media Templates</h3>
+            <p>150 editable posts &amp; stories for Instagram, TikTok and LinkedIn.</p>
+            <div class="product__foot">
+              <strong class="price">$24</strong>
+              <button class="btn btn--primary btn--sm buy-btn">Buy now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-id="ebook" data-name="The Freelancing Blueprint" data-price="12">
+          <div class="product__thumb thumb--blue">📘</div>
+          <div class="product__body">
+            <div class="product__tags"><span>E-book</span><span>PDF</span></div>
+            <h3>The Freelancing Blueprint</h3>
+            <p>180 pages: finding clients, pricing your work and scaling to full-time.</p>
+            <div class="product__foot">
+              <strong class="price">$12</strong>
+              <button class="btn btn--primary btn--sm buy-btn">Buy now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-id="presets" data-name="Lightroom Preset Pack" data-price="9">
+          <div class="product__thumb thumb--teal">🌅</div>
+          <div class="product__body">
+            <div class="product__tags"><span>Photo</span><span>LR</span></div>
+            <h3>Lightroom Preset Pack</h3>
+            <p>40 cinematic presets for desktop &amp; mobile, with a setup guide.</p>
+            <div class="product__foot">
+              <strong class="price">$9</strong>
+              <button class="btn btn--primary btn--sm buy-btn">Buy now</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section section--alt" id="how">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Simple &amp; secure</span>
+        <h2>How it works</h2>
+        <p>Three easy steps between you and your download.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step__num">1</span>
+          <h3>Choose your product</h3>
+          <p>Pick any item and press <strong>Buy now</strong>. You'll see the exact price and our wallet address.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">2</span>
+          <h3>Pay with crypto</h3>
+          <p>Send the amount in <strong>USDT</strong> on the <strong>Ethereum network (ERC-20)</strong> from any wallet, including Trust&nbsp;Wallet.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">3</span>
+          <h3>Get instant delivery</h3>
+          <p>Submit your transaction ID — your download link arrives by email, usually within minutes.</p>
+        </div>
+      </div>
+
+      <div class="pay-note">
+        <div class="pay-note__icon">🔒</div>
+        <div>
+          <h4>Why pay with crypto?</h4>
+          <p>Borderless, fast and private. No bank fees, no chargebacks — works from any country in the world.</p>
+        </div>
+        <a href="#products" class="btn btn--primary">Start shopping</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <div class="section__head">
+        <span class="eyebrow">Questions</span>
+        <h2>Frequently asked</h2>
+      </div>
+
+      <details class="faq" open>
+        <summary>How fast is delivery?</summary>
+        <p>Most orders are delivered within minutes after the transaction is confirmed on the network (up to ~10 minutes on busy chains).</p>
+      </details>
+      <details class="faq">
+        <summary>Which payment networks do you accept?</summary>
+        <p>We accept <strong>USDT on Ethereum (ERC-20)</strong>. In your wallet, make sure the selected network is <strong>Ethereum (ERC-20)</strong> — sending on any other network may result in lost funds.</p>
+      </details>
+      <details class="faq">
+        <summary>Can I get a refund?</summary>
+        <p>Digital goods are non-refundable once delivered. If a file is broken or doesn't match the description, contact us and we'll fix or replace it.</p>
+      </details>
+      <details class="faq">
+        <summary>Do I need an account?</summary>
+        <p>No sign-up required. Just order, pay, and receive your download link by email.</p>
+      </details>
+      <details class="faq">
+        <summary>Can I use the products commercially?</summary>
+        <p>Yes — every product includes a commercial license for unlimited personal and client projects.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ CTA / CONTACT ============ -->
+  <section class="cta" id="contact">
+    <div class="container cta__inner">
+      <h2>Ready to level up your projects?</h2>
+      <p>Grab a product today — or drop us a question, we usually reply within a few hours.</p>
+      <div class="cta__actions">
+        <a href="#products" class="btn btn--light">Browse products</a>
+        <a href="#" class="btn btn--outline-light" id="contactEmail">support@novabits.store</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo"><span class="logo__mark">◆</span> Nova<span class="accent">Bits</span></a>
+      <nav class="footer__links">
+        <a href="#products">Products</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p>© <span id="year"></span> NovaBits. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ BUY MODAL ============ -->
+  <div class="modal" id="buyModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Close">×</button>
+
+      <div class="modal__head">
+        <h3 id="modalTitle">Product</h3>
+        <span class="price price--lg" id="modalPrice">$0</span>
+      </div>
+
+      <div class="modal__networks" id="networkTabs"></div>
+
+      <label class="field">
+        <span>Send exactly this amount to the address below</span>
+        <div class="copyline">
+          <input type="text" id="payAddress" readonly value="" />
+          <button class="btn btn--primary btn--sm" id="copyBtn" type="button">Copy</button>
+        </div>
+      </label>
+
+      <div class="net-note" id="netNote"></div>
+
+      <form class="modal__form" id="orderForm">
+        <label class="field">
+          <span>Your email (for delivery)</span>
+          <input type="email" id="buyerEmail" placeholder="you@example.com" required />
+        </label>
+        <label class="field">
+          <span>Transaction ID (TX hash)</span>
+          <input type="text" id="txHash" placeholder="Paste the hash from your wallet" required />
+        </label>
+        <button class="btn btn--primary btn--block" type="submit">Confirm payment &amp; get download</button>
+        <p class="modal__hint">You'll be redirected to your email app with everything pre-filled — just press Send.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
